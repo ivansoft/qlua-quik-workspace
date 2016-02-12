@@ -1,0 +1,9 @@
+Author:  Mikhail Bulychev
+
+Function:
+    
+    The program calculates turnover on MICEX and RTS for all trades and given 
+    percentage of these turnovers
+
+How to use:
+    Time and Sales table must be opened.

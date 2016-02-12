@@ -1,0 +1,10 @@
+Author:  Mikhail Bulychev
+
+Function:
+    
+    The program displays the level of market activity that varies
+    by a number of all trades for a second.
+
+How to use:
+
+    Time and Sales table must be opened in QUIK Workstation.

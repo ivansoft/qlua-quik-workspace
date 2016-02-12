@@ -1,0 +1,16 @@
+Author:  Mikhail Bulychev
+
+Function:
+      Portfolio displays spreads between futures contracts and base asset
+
+How to use:
+
+     rows:
+
+	tmp=set_value(tmp, "base_class_code", "EQBR")
+	tmp=set_value(tmp, "base_sec_code", "EESR")
+	tmp=set_value(tmp, "class_code", "SPBFUT")
+	tmp=set_value(tmp, "sec_code", "ESU5")
+	coll=INSERT_COLLECTION_ITEM(coll,0,tmp)
+
+      set correspondence between futures contracts and base asset.      

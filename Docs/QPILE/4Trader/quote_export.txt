@@ -1,0 +1,11 @@
+Author:  Mikhail Bulychev
+
+Function:
+      Portfolio exports values of bid/offer to a text file for instruments
+      of the selected classes
+
+How to use:
+
+     Row quote_file="qoutes.txt" defines name of file to which the export must be performed.
+     Contents of the file is cleared at the portfolio start.
+     Row class_code_list="EQBR,EQBS,EQNL,EQNE" set a list of classes with securities to be exported

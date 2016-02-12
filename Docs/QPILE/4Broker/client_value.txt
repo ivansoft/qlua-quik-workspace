@@ -1,0 +1,10 @@
+Author:  Mikhail Bulychev
+
+Function:
+    
+    The program calculates the total volume of client's transactions from the list
+
+How to use:
+    
+    Row client_list="xxx,yyy,zzz" sets a list of clients for which the program 
+    collects the trading turnover

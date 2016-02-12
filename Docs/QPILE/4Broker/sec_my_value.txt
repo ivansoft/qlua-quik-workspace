@@ -1,0 +1,12 @@
+Author:  Mikhail Bulychev
+
+Function:
+    
+    The program calculates the total volume of the market for the instrument
+    and calculates the own firm's volume for the same instrument.
+    This program also shows a percentage of the own volume to the total one, 
+    expressed in percent.
+
+How to use:
+    Row 29 sets a list of classes to collect statistics for.
+    If "classes = get_classes_list()" the statistics is collected for all classes
