@@ -1,0 +1,16 @@
+Author:  Danil Baburin
+
+Function:
+      Portfolio records the current state of the client's assets
+
+How to use:
+
+      In rows:
+      client_code="xxx"
+      firm_id="yyyy"
+
+      insert the client code and the firm identifier.
+
+      Row:
+      file="assets_log.txt"
+      sets the file name for recording a state of portfolio

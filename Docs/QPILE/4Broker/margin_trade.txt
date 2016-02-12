@@ -1,0 +1,15 @@
+Author:  Mikhail Bulychev
+
+Function:
+    
+    The program monitors and records the margin level at the moment
+    of concluding trades for a group of clients.
+
+How to use:
+
+    In the following rows:
+	client_list = "xxx,yyy,zzz"
+	firm_id="firm_id"
+        filename="margin_level.txt"
+   set a list of clients to control margin, the firm identifier and name of file where 
+   the record is stored.

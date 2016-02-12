@@ -1,0 +1,6 @@
+Author:  Sergey Novozhilov
+
+Function:
+	This portfolio generates a table -
+	1. For RTS indices: broadcasts indicators from the stock exchange without changes
+	2. For MICEX indices: percentage to the previous closing and other parameters        

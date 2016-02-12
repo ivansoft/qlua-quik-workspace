@@ -1,0 +1,18 @@
+Author:  Mikhail Bulychev
+
+Function:
+      Portfolio records delays in broadcasting of trading data.
+      The following times must be compared to detect delays:
+      T1 - time of the last trade
+      T2 - time of the last trade in Quotes table
+      T3 - system time
+
+How to use:
+      Row  log_file_name="delays_protocol.txt" set name of file to record delays.
+      Parameters start_time,  stop_time correspond to local time of the monitoring 
+      start and end.  Parameters max_d1, max_d2, max_d3 mean the maximum allowed delay
+      of each type that is not yet a subject of recording.
+      Time of the computer must be synchronized with the QUIK server time.
+      Time and Sales table must be opened.
+
+  
