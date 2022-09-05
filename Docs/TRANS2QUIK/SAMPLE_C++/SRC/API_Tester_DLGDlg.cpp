@@ -40,6 +40,13 @@ void date_time_str(FILETIME* ft, char* buf, size_t buf_size)
                 st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond, st.wMilliseconds);
 }
 
+template<typename T>
+void format_scaled_number(T number, long scale, char* buf, size_t buf_size)
+{
+	double power = pow(10., scale);
+	_snprintf(buf, buf_size, "%.*lf", scale, static_cast<double>(number) / power);
+}
+
 struct SColumns 
 {
 	short col_id; 
@@ -87,7 +94,9 @@ FAR orders_pars [] =
 	{34, "MinQty",  -1},
 	{35, "ExecType",  -1},
 	{36, "AwgPrice",  -1},
-	{37, "RejectReason",  -1}
+	{37, "RejectReason",  -1},
+	// Front 7.18 - Trans2Quik 1.4
+	{38, "QtyScale",  -1}
 },
 
 FAR trades_pars [] =
@@ -137,7 +146,9 @@ FAR trades_pars [] =
 	{42, "FileTime",			-1},
 	{43, "Kind of trade",		-1},
 	{44, "BrokerCommission",	-1},
-	{45, "TransId",				-1} 
+	{45, "TransId",				-1},
+	// Front 7.18 - Trans2Quik 1.4
+	{46, "QtyScale",  -1}
 };
 
 void set_list_view_columns (HWND hwnd, int list_view_id, SColumns* cols, int col_nums)
@@ -264,7 +275,7 @@ BOOL CAPI_Tester_DLGDlg::OnInitDialog()
 	set_list_view_columns (m_hWnd, IDC_LIST_TRADES, trades_pars, sizeof(trades_pars)/sizeof(SColumns));
 
 #ifdef  _WIN64
-	SetWindowText( "Test application for Trans2Quik_x64.dll 1.3" );
+	SetWindowText( "Test application for Trans2Quik.dll 1.5" );
 #endif
 	
 	return TRUE;  // return TRUE  unless you set the focus to a control
@@ -373,6 +384,21 @@ extern "C" void __stdcall TRANS2QUIK_TransactionsReplyCallback (
 {
 	char Message [1024] = "";
 
+	auto ordes_cnt = TRANS2QUIK_TRANSACTION_REPLY_ORDERS_COUNT(transReplyDescriptor);
+
+	EntityNumber orderNumber1 = 0;
+	EntityNumber orderNumber2 = 0;
+
+	if (ordes_cnt == 1)
+	{
+		orderNumber1 = TRANS2QUIK_TRANSACTION_REPLY_FIRST_ORDER_NUMBER_BY_ID(transReplyDescriptor, 0);
+	}
+	else if(ordes_cnt == 2)
+	{
+		orderNumber1 = TRANS2QUIK_TRANSACTION_REPLY_FIRST_ORDER_NUMBER_BY_ID(transReplyDescriptor, 0);
+		orderNumber2 = TRANS2QUIK_TRANSACTION_REPLY_ORDER_NUMBER_BY_ID(transReplyDescriptor, 1);
+	}
+
 	sprintf (
 				Message, "Transaction result:\n"
 				"nTransactionResult = %ld,\n"
@@ -380,9 +406,10 @@ extern "C" void __stdcall TRANS2QUIK_TransactionsReplyCallback (
 				"dwTransId = %u,\n"
 				"dOrderNum = %I64d,\n"
 				"szResultMessage = \'%s\',\n"
-				"nExtendedErrorCode = %ld,\n",
-				nTransactionResult, nTransactionReplyCode, dwTransId, orderNum, lpcstrTransactionReplyMessage, nTransactionExtendedErrorCode
-			);
+				"nExtendedErrorCode = %ld,\n"
+				"nOrderNumber1 = %I64d\n"
+				"nOrderNumber2 = %I64d\n",
+				nTransactionResult, nTransactionReplyCode, dwTransId, orderNum, lpcstrTransactionReplyMessage, nTransactionExtendedErrorCode, orderNumber1, orderNumber2);
 
 	::MessageBox (g_hWndParent, Message, "Attention!!!", MB_ICONINFORMATION);
 }
@@ -428,21 +455,23 @@ UINT SyncTransThread (LPVOID pvParam)
 	long nReturnCode;
 	DWORD dwTransId;
 	EntityNumber dOrderNum;
+	EntityNumber dOrderNum2 = -1;
 	char szResultMessage[1024];
 	long nExtendedErrorCode;
 	char szErrorMessage[1024];
 
 	
-	TRANS2QUIK_SEND_SYNC_TRANSACTION (pszTransaction, &nReturnCode, &dwTransId, &dOrderNum, szResultMessage, sizeof (szResultMessage), &nExtendedErrorCode, szErrorMessage, sizeof (szErrorMessage));
-	
+	TRANS2QUIK_SEND_SYNC_TRANSACTION (pszTransaction, &nReturnCode, &dwTransId, &dOrderNum, &dOrderNum2, szResultMessage, sizeof (szResultMessage), &nExtendedErrorCode, szErrorMessage, sizeof (szErrorMessage));
+
 	sprintf (
 		szMessage, "Sync transaction result:"
 		"nReturnCode = %ld,\n"
 		"dwTransId = %u,\n"
-		"dOrderNum = %I64u,\n"
+		"dOrderNum1 = %I64u,\n"
+		"dOrderNum2 = %I64u,\n"
 		"nExtendedErrorCode = %ld,\n"
 		"szResultMessage = \'%s\',\n",
-		nReturnCode, dwTransId, dOrderNum, nExtendedErrorCode, szResultMessage
+		nReturnCode, dwTransId, dOrderNum, dOrderNum2, nExtendedErrorCode, szResultMessage
 		);
 	
 	//	if (m_nResult != TRANS2QUIK_SUCCESS)
@@ -453,10 +482,10 @@ UINT SyncTransThread (LPVOID pvParam)
 	delete [] pszTransaction;
 	EnableWindow(p->hwndButton, TRUE);
 	delete p;
-	
+
 	return 1;
-	
 }
+
 void CAPI_Tester_DLGDlg::OnSyncTrans() 
 {
 	// TODO: Add your control notification handler code here
@@ -672,7 +701,8 @@ void __stdcall ORDER_STATUS_CALLBACK(
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
-	sprintf (item_text, "%I64d", nBalance);
+	long qtyScale = TRANS2QUIK_ORDER_QTY_SCALE(descriptor);
+	format_scaled_number(nBalance, qtyScale, item_text, sizeof(item_text));
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 	
@@ -688,7 +718,7 @@ void __stdcall ORDER_STATUS_CALLBACK(
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 	
-	sprintf (item_text, "%I64d", TRANS2QUIK_ORDER_QTY(descriptor));
+	format_scaled_number(TRANS2QUIK_ORDER_QTY(descriptor), qtyScale, item_text, sizeof(item_text));
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
@@ -745,7 +775,7 @@ void __stdcall ORDER_STATUS_CALLBACK(
     lvitem.iSubItem++;
 
     //////////////////////////////////////////////////////////////////////////
-    sprintf (item_text, "%I64d", TRANS2QUIK_ORDER_VISIBLE_QTY(descriptor));
+	format_scaled_number(TRANS2QUIK_ORDER_VISIBLE_QTY(descriptor), qtyScale, item_text, sizeof(item_text));
     SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
@@ -783,7 +813,7 @@ void __stdcall ORDER_STATUS_CALLBACK(
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
 	lvitem.iSubItem++;
 
-	sprintf (item_text, "%ld", TRANS2QUIK_ORDER_MIN_QTY (descriptor));
+	format_scaled_number(TRANS2QUIK_ORDER_MIN_QTY(descriptor), qtyScale, item_text, sizeof(item_text));
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
 	lvitem.iSubItem++;
 
@@ -797,6 +827,10 @@ void __stdcall ORDER_STATUS_CALLBACK(
 
 	sprintf (item_text, "%s", TRANS2QUIK_ORDER_REJECT_REASON(descriptor));
 	SendMessage (orders_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
+	lvitem.iSubItem++;
+
+	sprintf(item_text, "%ld", qtyScale);
+	SendMessage(orders_list_view, LVM_SETITEMTEXT, (WPARAM)Item, (LPARAM)&lvitem);
 	lvitem.iSubItem++;
 }
 
@@ -877,15 +911,16 @@ void __stdcall TRADE_STATUS_CALLBACK (
 	SendMessage (trades_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
-	sprintf (item_text, "%.0lf", dPrice);
+	sprintf (item_text, "%lf", dPrice);
 	SendMessage (trades_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
-	sprintf (item_text, "%I64d", nQty);
+	long qtyScale = TRANS2QUIK_TRADE_QTY_SCALE(descriptor);
+	format_scaled_number(nQty, qtyScale, item_text, sizeof(item_text));
 	SendMessage (trades_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
-	sprintf (item_text, "%.0lf", dValue);
+	sprintf (item_text, "%lf", dValue);
 	SendMessage (trades_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
     lvitem.iSubItem++;
 
@@ -1036,6 +1071,10 @@ void __stdcall TRADE_STATUS_CALLBACK (
 
 	sprintf (item_text, "%ld", TRANS2QUIK_TRADE_TRANSID (descriptor));
 	SendMessage (trades_list_view, LVM_SETITEMTEXT, (WPARAM) Item, (LPARAM)&lvitem);
+	lvitem.iSubItem++;
+
+	sprintf(item_text, "%ld", TRANS2QUIK_TRADE_QTY_SCALE(descriptor));
+	SendMessage(trades_list_view, LVM_SETITEMTEXT, (WPARAM)Item, (LPARAM)&lvitem);
 	lvitem.iSubItem++;
 }
 
