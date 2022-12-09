@@ -85,6 +85,7 @@ typedef void (__stdcall *TRANS2QUIK_TRADE_STATUS_CALLBACK)      (
 #define ORDER_WITHDRAW_MICROSEC                 5
 
 long TRANS2QUIK_API __stdcall TRANS2QUIK_SEND_SYNC_TRANSACTION (LPSTR lpstTransactionString, long* pnReplyCode, PDWORD pdwTransId, EntityNumber* pnOrderNum, LPSTR lpstrResultMessage, DWORD dwResultMessageSize, long* pnExtendedErrorCode, LPSTR lpstErrorMessage, DWORD dwErrorMessageSize);
+long TRANS2QUIK_API __stdcall TRANS2QUIK_SEND_SYNC_TRANSACTION_EX(LPSTR lpstTransactionString, long* pnReplyCode, PDWORD pdwTransId, EntityNumber* pnOrderNum1, EntityNumber* pnOrderNum2, LPSTR lpstrResultMessage, DWORD dwResultMessageSize, long* pnExtendedErrorCode, LPSTR lpstErrorMessage, DWORD dwErrorMessageSize);
 long TRANS2QUIK_API __stdcall TRANS2QUIK_SEND_ASYNC_TRANSACTION (LPSTR lpstTransactionString, long* pnExtendedErrorCode, LPSTR lpstErrorMessage, DWORD dwErrorMessageSize);
 long TRANS2QUIK_API __stdcall TRANS2QUIK_CONNECT (LPSTR lpstConnectionParamsString, long* pnExtendedErrorCode, LPSTR lpstrErrorMessage, DWORD dwErrorMessageSize);
 long TRANS2QUIK_API __stdcall TRANS2QUIK_DISCONNECT (long* pnExtendedErrorCode, LPSTR lpstrErrorMessage, DWORD dwErrorMessageSize);
@@ -118,6 +119,8 @@ long TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_EXTENDED_FLAGS(OrderDescriptor or
 Quantity  TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_MIN_QTY (OrderDescriptor orderDescriptor);
 long TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_EXEC_TYPE(OrderDescriptor orderDescriptor);
 double TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_AWG_PRICE (OrderDescriptor orderDescriptor);
+long TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_QTY_SCALE(OrderDescriptor orderDescriptor);
+
 
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_USERID (OrderDescriptor orderDescriptor);
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_ORDER_ACCOUNT (OrderDescriptor orderDescriptor); 
@@ -162,6 +165,7 @@ FILETIME TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_FILETIME (TradeDescriptor tra
 long TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_DATE_TIME (TradeDescriptor tradeDescriptor, long nTimeType);
 double TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_BROKER_COMMISSION (TradeDescriptor tradeDescriptor);
 long TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_TRANSID (TradeDescriptor tradeDescriptor);
+long TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_QTY_SCALE (TradeDescriptor tradeDescriptor);
 
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_CURRENCY (TradeDescriptor tradeDescriptor);
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRADE_SETTLE_CURRENCY (TradeDescriptor tradeDescriptor);
@@ -186,6 +190,18 @@ LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_ACCOUNT (Transactio
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_CLIENT_CODE (TransactionReplyDescriptor tradeDescriptor);
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_BROKERREF (TransactionReplyDescriptor tradeDescriptor);
 LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_EXCHANGE_CODE (TransactionReplyDescriptor tradeDescriptor);
+long TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_QTY_SCALE(TransactionReplyDescriptor descriptor);
+
+short TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_ORDERS_COUNT(TransactionReplyDescriptor tradeDescriptor);
+EntityNumber TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_FIRST_ORDER_NUMBER_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+EntityNumber TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_ORDER_NUMBER_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+double TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_PRICE_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+Quantity TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_QUANTITY_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+Quantity TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_BALANCE_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_FIRMID_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_ACCOUNT_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_CLIENT_CODE_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
+LPTSTR TRANS2QUIK_API __stdcall TRANS2QUIK_TRANSACTION_REPLY_BROKERREF_BY_ID(TransactionReplyDescriptor tradeDescriptor, int orderId);
 
 #ifdef __cplusplus
 }
