@@ -62,3 +62,79 @@ https://www.tarantool.io/ru/doc/latest/reference/reference_lua/
 - https://luarocks.org/modules/rtsisyk/http (https://github.com/tarantool/http/tree/tarantool-1.6 - HTTP 1.1 query with no SSL support)
 
 http://lua-users.org/wiki/DateAndTime
+
+
+================
+
+TL;DR - Lua Lang
+
+- chunks - we call each piece of code that Lua executes (file, line in interactive mode), a sequence of commands (or statements) or a single statement, large chunks (~megabytes) are not a problem for Lua
+- Lua is used also as a data-description language
+- end-of-file control charter (ctrl-D in POSIX, ctrl-Z in Windows)
+- # - length operator, length of a string is its number of bytes
+      length of a table is its border (table can be a sequence or not)
+      {10, 20, 30, 40, 50} vs {10, 20, 30, nil, 50},
+      {} has border 0
+- 10 or 20      --> 10
+- 10 and 20     --> 20
+- 0 or 5        --> 0   -- ( 0 == true)
+- "" or 5       --> ""  -- ("" == true)
+- local Name <const>] {‘,’ Name <close>]} [‘=’ explist]
+- v:name(args)  -- is syntactic sugar for v.name(v,args)
+- f{fields}     -- is syntactic sugar for f({fields})
+- f'string'     -- is syntactic sugar for f('string')
+  f"string"
+  f[[string]]
+- return functioncall;  -- is called a tail call
+  return (f(x))         -- results adjusted to 1
+  return 2 * f(x)       -- result multiplied by 2
+  return x, f(x)        -- additional results
+  f(x); return          -- results discarded
+  return x or f(x)      -- results adjusted to 1
+
+function definition
+-
+  function ‘(’ [parlist] ‘)’ block end
+  function Name {‘.’ Name} [‘:’ Name] ‘(’ [parlist] ‘)’ block end
+  local function Name ‘(’ [parlist] ‘)’ block end
+- 
+  function f () body end
+  f = function () body end
+-
+  function t.a.b.c.f () body end
+  t.a.b.c.f = function () body end
+-
+  local function f () body end
+  local f; f = function () body end  -- equivalent, supports recursion
+ not
+  local f = function () body end     -- this only makes a difference when body contains references to f
+-
+
+- {...}           -- creates a list with all vararg arguments
+- return x, ...   -- returns x and all received vararg arguments
+- local x = ...   -- x gets the first vararg argument
+- x,y,z = w, f()  -- x gets w, y and z from f()
+- {f()}           -- list with all results from f()
+- {f(), 5}        -- list with the first !! result from f() and 5
+
+- for Name ‘=’ exp ‘,’ exp [‘,’ exp] do block end
+- for i = 1, math.huge do block end
+- for var = exp1, exp2, exp3 do block end
+- for each value of var from exp1 to exp2, using exp3 as the step to increment var
+
+- for Name {‘,’ Name} in explist do block end
+- for var_1, ···, var_n in explist do body end
+- var_1 --  control variable
+- explist = (1) an iterator function, (2) a state (initial value for the control variable), and (3) a closing value
+- var_1, ···, var_n = iterator_function(state, control_variable)
+- while var_1 != nill do body()
+- do
+      local _f, _s, _var = explist
+      while true do
+          local var_1, ... , var_n = _f(_s, _var)
+          _var = var_1
+          if _var == nil then break end
+          block
+      end
+  end
+- for k in e1, e2, e3 do ... end
