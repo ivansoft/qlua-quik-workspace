@@ -1,4 +1,4 @@
-# QLua Root
+# QUIK Workspace
 
 QUIK parent directory.
 
