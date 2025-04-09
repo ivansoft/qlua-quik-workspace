@@ -1,0 +1,103 @@
+	FUT_F
+STATUS	торгуется	Статус
+LOTSIZE	1000	Лот
+BID	88.94	Спрос
+BIDDEPTH	64	Кол. спрос
+BIDDEPTHT	18537	Общ. спрос
+NUMBIDS	1678	Заявки куп.
+OFFER	88.95	Предл.
+OFFERDEPTH	108	Кол. предл.
+OFFERDEPTHT	11069	Общ. предл.
+NUMOFFERS	1084	Заявки прод.
+HIGH	89.34	Макс. цена
+LOW	88.15	Мин. цена
+LAST	88.94	Цена послед.
+CHANGE	3.48	Измен. к закр.
+QTY	1	Кол-во послед.
+TIME	10:08:19	Время послед.
+VOLTODAY	35581	Общее кол-во
+VALTODAY	3161594470.00	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	88940.00	Оборот посл.
+WAPRICE	88.86	Ср. взв. цена
+NUMTRADES	8836	Кол-во сделок
+PREVPRICE	85.46	Цена закр.
+LASTCHANGE	4.07	% измен.закр.
+SETTLECODE		Код расч.
+SETTLEDATE		Дата расч.
+PRICEMAX	92.51	Макс.возм.цена
+PRICEMIN	78.41	Мин.возм.цена
+LONGNAME	USDRUBF	Инструмент
+SHORTNAME	USDRUBF	Инструмент сокр.
+CODE	USDRUBF	Код инструмента
+ISINCODE		ISIN
+REGNUMBER		Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	FORTS: Фьючерсы	Класс
+CLASS_CODE	SPBFUT	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE		Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	2	Точность
+SEC_PRICE_STEP	0.01	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Фьючерсы	Тип инстр-та
+SECSUBTYPESTATIC	Расчетный фьючерс	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+ANONTRADE	Разрешена	Анон. торг.
+MAT_DATE	01/01/2100	Погашение
+DAYS_TO_MAT_DATE	27295	До погашения
+EXPDATE	01/01/2100	Дата исп.
+PREVWAPRICE	85.46	Пред. оц.
+BENCHMARK		Индикатор
+CHANGETIME	10:08:19	Время изм.
+TRADINGPHASE	открыта	Бирж. сессия
+STARTTIME	10:00:00	Начало.аук.
+ENDTIME	18:50:00	Окончание.аук.
+AUCTPRICE	89.31	Цена аукц.
+TRADECHANGE	0.00	Тренд
+CLPRICE	85.46	Кот. клиринга
+OPTIONBASE	USDRUBTOM	Баз.актив
+PREVSETTLEPRICE	85.46	Пред.расч.цена
+SELLDEPO	12835.78	ГО продавца
+BUYDEPO	12831.56	ГО покупателя
+STEPPRICE	10.000000	Ст. шага цены
+SETTLEPRICE	88.94	Расч. цена
+R_SETTLEPRICE	88.94000	Реал. расч. цена
+CLSTATE	Назначен пр.	Статус кл.
+R_CLPRICE	85.46000	Реал.кот.клиринг
+EVNSTARTTIME	19:05:00	Начало веч.
+EVNENDTIME	23:50:00	Окончание веч.
+STEP_IN_CURRENCY	10.000000	Ст.шага в валюте
+FIRSTOPEN	88.18	Перв.цена сессии
+LASTCLOSE	0.00	Посл.цена сессии
+PREVSETTLEVOL	85460.00	Пред.расч.объем
+OPENPCTCHANGE	0.86	% измен.откр.
+NEGATIVEPRC	Да	Огран.отриц.цен
+NUMCONTRACTS	954576	Откр.инт.
+SWAP_RATE	0.000000	Ставка переноса
+AUCTALLOW	Да	Разрешен аукцион
+ISPERCENT	Обычная	Тип цены фьюч.
+FUTURETYPE	Расчетный	Тип фьючерса
+OPTIONBASECLASS		Класс баз.актива
+CURSTEPPRICE	SUR	Валюта шага цены
+PREV_SWAP_RATE	0.086190	Ставка пер.пред.
+BUYDEPO_HRC	12831.56	ГО покупат. КПУР
+BUYDEPO_MRC	23726.44	ГО покупат. КСУР
+BUYDEPO_LRC	31253.37	ГО покупат. КНУР
+BUYDEPO_ERC	12831.56	ГО покупат. КОУР
+SELLDEPO_HRC	12835.78	ГО продавца КПУР
+SELLDEPO_MRC	23734.24	ГО продавца КСУР
+SELLDEPO_LRC	31263.64	ГО продавца КНУР
+SELLDEPO_ERC	12835.78	ГО продавца КОУР

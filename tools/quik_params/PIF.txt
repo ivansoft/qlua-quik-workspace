@@ -1,0 +1,101 @@
+	PIF
+SECTYPE	интр.ПИФ	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	900.5	Спрос
+BIDDEPTH	4	Кол. спрос
+BIDDEPTHT	16513	Общ. спрос
+NUMBIDS	23	Заявки куп.
+OFFER	904.0	Предл.
+OFFERDEPTH	14	Кол. предл.
+OFFERDEPTHT	16226	Общ. предл.
+NUMOFFERS	16	Заявки прод.
+OPEN	898.5	Откр.
+HIGH	906.5	Макс. цена
+LOW	898.5	Мин. цена
+LAST	906.5	Цена послед.
+CHANGE	13.5	Измен. к закр.
+QTY	95	Кол-во послед.
+TIME	10:08:20	Время послед.
+VOLTODAY	113	Общее кол-во
+VALTODAY	102376	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	86117.50	Оборот посл.
+WAPRICE	906.0	Ср. взв. цена
+HIGHBID	911.0	Лучш. спрос
+LOWOFFER	894.5	Лучш. пред
+NUMTRADES	7	Кол-во сделок
+PREVPRICE	893.0	Цена закр.
+CLOSEPRICE	0.0	Закр.
+LASTCHANGE	1.51	% измен.закр.
+MARKETPRICE	956.5	Вч.рын.цена
+MARKETPRICETODAY	0.0	Рын.цена
+ISSUESIZE	0	Объем обр.
+PREVDATE	04/08/2025	Дата посл.торг.
+LCURRENTPRICE	906.0	Оф.тек.цена
+LCLOSEPRICE	0.0	Оф.цена закр.
+QUOTEBASIS	Цена	Тип цены
+LASTBID	900.5	Спрос сессии
+LASTOFFER	904.0	Предл.сессии
+MARKETPRICE2	0.0	Рын.цена2
+PREVLEGALCLOSEPR	943.5	Пред.цена закр.
+OPENPERIODPRICE	898.5	Цена предторг.
+MIN_CURR_LAST	906.0	Мин.тек.цена
+SETTLECODE	Y1	Код расч.
+ISSUESIZEPLACED	0	Объем в обр.
+SETTLEDATE	04/10/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	3	Листинг
+PRICEMAX	1317.5	Макс.возм.цена
+PRICEMIN	565.0	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	0	Сложный продукт
+LONGNAME	2х Акции	Инструмент
+SHORTNAME	2х Акции	Инструмент сокр.
+CODE	RU000A109R27	Код инструмента
+ISINCODE	RU000A109R27	ISIN
+REGNUMBER	6545-СД	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: Т+: Паи	Класс
+CLASS_CODE	TQIF	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE		Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	1	Точность
+SEC_PRICE_STEP	0.5	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Ценные бумаги	Тип инстр-та
+SECSUBTYPESTATIC	Пай интервального ПИФа	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED	Для любых квал.инвесторов	Квалиф. инвестор
+EV_SESS_ALLOWED	Да	Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE		Утр. сессия
+ANONTRADE	Разрешена	Анон. торг.
+PREVWAPRICE	940.0	Пред. оц.
+COUNTERPRICE	0.0	Цена контраг.
+BENCHMARK		Индикатор
+PLANNEDTIME	09:50:00	Начало аук.план
+STARTTIME	09:50:00	Начало.аук.
+ENDTIME	09:59:59	Окончание.аук.
+AUCTPRICE	898.5	Цена аукц.
+AUCTVALUE	3594.00	Объем аукц.
+AUCTVOLUME	4	Кол-во аукц.
+AUCTNUMTRADES	1	Кол-во сд.аукц.
+MARKETVOLB	0	Рын.пок.
+MARKETVOLS	0	Рын.прод.
+DIVIDENDVALUE	0.00	Дивиденды
+DIVIDENDDATE		Дата з.р.

@@ -1,0 +1,101 @@
+	STOCK
+SECTYPE	ао	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	6381.0	Спрос
+BIDDEPTH	11	Кол. спрос
+BIDDEPTHT	92082	Общ. спрос
+NUMBIDS	4760	Заявки куп.
+OFFER	6381.5	Предл.
+OFFERDEPTH	1	Кол. предл.
+OFFERDEPTHT	58380	Общ. предл.
+NUMOFFERS	1799	Заявки прод.
+OPEN	6399.5	Откр.
+HIGH	6478.0	Макс. цена
+LOW	6353.0	Мин. цена
+LAST	6381.0	Цена послед.
+CHANGE	31.5	Измен. к закр.
+QTY	2	Кол-во послед.
+TIME	18:38:23	Время послед.
+VOLTODAY	716908	Общее кол-во
+VALTODAY	4596270832	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	12762.00	Оборот посл.
+WAPRICE	6407.0	Ср. взв. цена
+HIGHBID	6830.5	Лучш. спрос
+LOWOFFER	6116.5	Лучш. пред
+NUMTRADES	52467	Кол-во сделок
+PREVPRICE	6349.5	Цена закр.
+CLOSEPRICE	0.0	Закр.
+LASTCHANGE	0.50	% измен.закр.
+MARKETPRICE	6369.5	Вч.рын.цена
+MARKETPRICETODAY	0.0	Рын.цена
+ISSUESIZE	692865762	Объем обр.
+PREVDATE	04/07/2025	Дата посл.торг.
+LCURRENTPRICE	6385.0	Оф.тек.цена
+LCLOSEPRICE	0.0	Оф.цена закр.
+QUOTEBASIS	Цена	Тип цены
+LASTBID	6381.0	Спрос сессии
+LASTOFFER	6381.5	Предл.сессии
+MARKETPRICE2	0.0	Рын.цена2
+PREVLEGALCLOSEPR	6351.0	Пред.цена закр.
+OPENPERIODPRICE	6399.5	Цена предторг.
+MIN_CURR_LAST	6376.5	Мин.тек.цена
+SETTLECODE	Y1	Код расч.
+ISSUESIZEPLACED	0	Объем в обр.
+SETTLEDATE	04/09/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	1	Листинг
+PRICEMAX	6973.0	Макс.возм.цена
+PRICEMIN	5698.0	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	-100	Сложный продукт
+LONGNAME	НК ЛУКОЙЛ (ПАО) - ао	Инструмент
+SHORTNAME	ЛУКОЙЛ	Инструмент сокр.
+CODE	LKOH	Код инструмента
+ISINCODE	RU0009024277	ISIN
+REGNUMBER	1-01-00077-A	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: Т+: Акции	Класс
+CLASS_CODE	TQBR	Код класса
+TRADE_DATE_CODE	04/08/2025	Дата торгов
+SEC_FACE_VALUE	0.025	Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	1	Точность
+SEC_PRICE_STEP	0.5	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Ценные бумаги	Тип инстр-та
+SECSUBTYPESTATIC	Акция обыкновенная	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED		Квалиф. инвестор
+EV_SESS_ALLOWED	Да	Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE	Да	Утр. сессия
+ANONTRADE	Разрешена	Анон. торг.
+PREVWAPRICE	6382.0	Пред. оц.
+COUNTERPRICE	0.0	Цена контраг.
+BENCHMARK		Индикатор
+PLANNEDTIME	06:50:00	Начало аук.план
+STARTTIME	06:50:00	Начало.аук.
+ENDTIME	06:59:35	Окончание.аук.
+AUCTPRICE	6399.5	Цена аукц.
+AUCTVALUE	14398875.00	Объем аукц.
+AUCTVOLUME	2250	Кол-во аукц.
+AUCTNUMTRADES	49	Кол-во сд.аукц.
+MARKETVOLB	0	Рын.пок.
+MARKETVOLS	0	Рын.прод.
+DIVIDENDVALUE	541.00	Дивиденды
+DIVIDENDDATE	06/03/2025	Дата з.р.

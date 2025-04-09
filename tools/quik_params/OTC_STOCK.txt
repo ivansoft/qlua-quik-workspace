@@ -1,0 +1,101 @@
+	OTC
+SECTYPE	ао	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	232.16	Спрос
+BIDDEPTH	7	Кол. спрос
+BIDDEPTHT	310	Общ. спрос
+NUMBIDS	33	Заявки куп.
+OFFER	236.99	Предл.
+OFFERDEPTH	10	Кол. предл.
+OFFERDEPTHT	721	Общ. предл.
+NUMOFFERS	33	Заявки прод.
+OPEN	238.01	Откр.
+HIGH	238.01	Макс. цена
+LOW	232.14	Мин. цена
+LAST	232.14	Цена послед.
+CHANGE	-8.85	Измен. к закр.
+QTY	1	Кол-во послед.
+TIME	08:38:41	Время послед.
+VOLTODAY	4	Общее кол-во
+VALTODAY	940	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	232.14	Оборот посл.
+WAPRICE	235.08	Ср. взв. цена
+HIGHBID	238.01	Лучш. спрос
+LOWOFFER	236.99	Лучш. пред
+NUMTRADES	3	Кол-во сделок
+PREVPRICE	240.99	Цена закр.
+CLOSEPRICE	0.00	Закр.
+LASTCHANGE	-3.67	% измен.закр.
+MARKETPRICE	0.00	Вч.рын.цена
+MARKETPRICETODAY	0.00	Рын.цена
+ISSUESIZE	286836224	Объем обр.
+PREVDATE	04/08/2025	Дата посл.торг.
+LCURRENTPRICE	0.00	Оф.тек.цена
+LCLOSEPRICE	0.00	Оф.цена закр.
+QUOTEBASIS	Цена	Тип цены
+LASTBID	232.16	Спрос сессии
+LASTOFFER	236.99	Предл.сессии
+MARKETPRICE2	0.00	Рын.цена2
+PREVLEGALCLOSEPR	0.00	Пред.цена закр.
+OPENPERIODPRICE	0.00	Цена предторг.
+MIN_CURR_LAST	0.00	Мин.тек.цена
+SETTLECODE	Y1	Код расч.
+ISSUESIZEPLACED	0	Объем в обр.
+SETTLEDATE	04/10/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	0	Листинг
+PRICEMAX	336.95	Макс.возм.цена
+PRICEMIN	144.41	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	0	Сложный продукт
+LONGNAME	Новошип ао	Инструмент
+SHORTNAME	Новошип ао	Инструмент сокр.
+CODE	NOMP	Код инструмента
+ISINCODE	RU0009084453	ISIN
+REGNUMBER	1-02-00103-A	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: ОТС: Акции	Класс
+CLASS_CODE	MTQR	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE	1.00	Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	2	Точность
+SEC_PRICE_STEP	0.01	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Ценные бумаги	Тип инстр-та
+SECSUBTYPESTATIC	Акция обыкновенная	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED	Для любых квал.инвесторов	Квалиф. инвестор
+EV_SESS_ALLOWED		Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE		Утр. сессия
+ANONTRADE	Разрешена	Анон. торг.
+PREVWAPRICE	240.52	Пред. оц.
+COUNTERPRICE	0.00	Цена контраг.
+BENCHMARK		Индикатор
+PLANNEDTIME		Начало аук.план
+STARTTIME		Начало.аук.
+ENDTIME		Окончание.аук.
+AUCTPRICE	0.00	Цена аукц.
+AUCTVALUE	0.00	Объем аукц.
+AUCTVOLUME	0	Кол-во аукц.
+AUCTNUMTRADES	0	Кол-во сд.аукц.
+MARKETVOLB	0	Рын.пок.
+MARKETVOLS	0	Рын.прод.
+DIVIDENDVALUE	0.00	Дивиденды
+DIVIDENDDATE		Дата з.р.

@@ -1,0 +1,101 @@
+	LIST_STOCK
+SECTYPE	закр.ПИФ	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	0	Спрос
+BIDDEPTH	0	Кол. спрос
+BIDDEPTHT	0	Общ. спрос
+NUMBIDS	0	Заявки куп.
+OFFER	0	Предл.
+OFFERDEPTH	0	Кол. предл.
+OFFERDEPTHT	0	Общ. предл.
+NUMOFFERS	0	Заявки прод.
+OPEN	0	Откр.
+HIGH	0	Макс. цена
+LOW	0	Мин. цена
+LAST	0	Цена послед.
+CHANGE	0	Измен. к закр.
+QTY	0	Кол-во послед.
+TIME		Время послед.
+VOLTODAY	0	Общее кол-во
+VALTODAY	0	Оборот
+TRADINGSTATUS	закрыта	Сессия
+VALUE	0.00	Оборот посл.
+WAPRICE	0	Ср. взв. цена
+HIGHBID	0	Лучш. спрос
+LOWOFFER	0	Лучш. пред
+NUMTRADES	0	Кол-во сделок
+PREVPRICE	0	Цена закр.
+CLOSEPRICE	0	Закр.
+LASTCHANGE	0.00	% измен.закр.
+MARKETPRICE	0	Вч.рын.цена
+MARKETPRICETODAY	0	Рын.цена
+ISSUESIZE	0	Объем обр.
+PREVDATE	04/08/2025	Дата посл.торг.
+LCURRENTPRICE	0	Оф.тек.цена
+LCLOSEPRICE	0	Оф.цена закр.
+QUOTEBASIS	Цена	Тип цены
+LASTBID	0	Спрос сессии
+LASTOFFER	0	Предл.сессии
+MARKETPRICE2	0	Рын.цена2
+PREVLEGALCLOSEPR	0	Пред.цена закр.
+OPENPERIODPRICE	0	Цена предторг.
+MIN_CURR_LAST	0	Мин.тек.цена
+SETTLECODE	T0	Код расч.
+ISSUESIZEPLACED	0	Объем в обр.
+SETTLEDATE	04/09/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	3	Листинг
+PRICEMAX	0	Макс.возм.цена
+PRICEMIN	0	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	0	Сложный продукт
+LONGNAME	ПАРУС-КРАСНОЯРСК	Инструмент
+SHORTNAME	ПАРУС-КРАС	Инструмент сокр.
+CODE	RU000A108UH0	Код инструмента
+ISINCODE	RU000A108UH0	ISIN
+REGNUMBER	5849-СД	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: Первичное размещение (Акции)	Класс
+CLASS_CODE	PSSU	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE	1.00	Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	0	Точность
+SEC_PRICE_STEP	1	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID	MC0088200000	Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Ценные бумаги	Тип инстр-та
+SECSUBTYPESTATIC	Пай закрытого ПИФа	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED	Для любых квал.инвесторов	Квалиф. инвестор
+EV_SESS_ALLOWED		Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE		Утр. сессия
+ANONTRADE	Запрещена	Анон. торг.
+PREVWAPRICE	0	Пред. оц.
+COUNTERPRICE	0	Цена контраг.
+BENCHMARK		Индикатор
+PLANNEDTIME		Начало аук.план
+STARTTIME		Начало.аук.
+ENDTIME		Окончание.аук.
+AUCTPRICE	0	Цена аукц.
+AUCTVALUE	0.00	Объем аукц.
+AUCTVOLUME	0	Кол-во аукц.
+AUCTNUMTRADES	0	Кол-во сд.аукц.
+MARKETVOLB	0	Рын.пок.
+MARKETVOLS	0	Рын.прод.
+DIVIDENDVALUE	0.00	Дивиденды
+DIVIDENDDATE		Дата з.р.

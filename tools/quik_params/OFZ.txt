@@ -1,0 +1,107 @@
+	OFZ
+SECTYPE	РФ	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	98.9530	Спрос
+BIDDEPTH	6	Кол. спрос
+BIDDEPTHT	346074	Общ. спрос
+NUMBIDS	41	Заявки куп.
+OFFER	98.9970	Предл.
+OFFERDEPTH	960	Кол. предл.
+OFFERDEPTHT	1463747	Общ. предл.
+NUMOFFERS	94	Заявки прод.
+OPEN	98.9010	Откр.
+HIGH	99.1920	Макс. цена
+LOW	98.9010	Мин. цена
+LAST	98.9970	Цена послед.
+CHANGE	-0.0520	Измен. к закр.
+QTY	10	Кол-во послед.
+TIME	18:24:42	Время послед.
+VOLTODAY	398720	Общее кол-во
+VALTODAY	394733045	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	9899.70	Оборот посл.
+WAPRICE	99.0000	Ср. взв. цена
+HIGHBID	99.7880	Лучш. спрос
+LOWOFFER	98.2090	Лучш. пред
+NUMTRADES	296	Кол-во сделок
+PREVPRICE	99.0490	Цена закр.
+ACCRUEDINT	8.21	НКД
+YIELD	0.00	Доходность
+COUPONVALUE	0.00	Размер купона
+COUPONPERIOD	91	Длит. купона
+YIELDATPREVWAPRI	0.00	Доход.пред.оц.
+YIELDATWAPRICE	0.00	Доход.оц.
+PRICEMINUSPREVWA	-0.0010	Изм. к пред.оц.
+CLOSEPRICE	0.0000	Закр.
+LASTCHANGE	-0.05	% измен.закр.
+MARKETPRICE	98.9980	Вч.рын.цена
+MARKETPRICETODAY	0.0000	Рын.цена
+NEXTCOUPON	06/25/2025	Дата выпл. куп.
+BUYBACKPRICE	0.0000	Оферта
+BUYBACKDATE		Дата расч.доход
+ISSUESIZE	155059582	Объем обр.
+PREVDATE	04/07/2025	Дата посл.торг.
+DURATION	0.00	Дюрация
+LCURRENTPRICE	98.9530	Оф.тек.цена
+LCLOSEPRICE	0.0000	Оф.цена закр.
+QUOTEBASIS	% от ном.	Тип цены
+LASTBID	98.9530	Спрос сессии
+LASTOFFER	98.9970	Предл.сессии
+MARKETPRICE2	0.0000	Рын.цена2
+PREVLEGALCLOSEPR	99.0500	Пред.цена закр.
+OPENPERIODPRICE	0.0000	Цена предторг.
+MIN_CURR_LAST	98.9530	Мин.тек.цена
+SETTLECODE	Y1	Код расч.
+ISSUESIZEPLACED	155059582	Объем в обр.
+SETTLEDATE	04/09/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	1	Листинг
+PRICEMAX	102.9960	Макс.возм.цена
+PRICEMIN	94.9540	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	8	Сложный продукт
+LONGNAME	ОФЗ-ПК 29016 23/12/2026	Инструмент
+SHORTNAME	ОФЗ 29016	Инструмент сокр.
+CODE	SU29016RMFS1	Код инструмента
+ISINCODE	RU000A1025B5	ISIN
+REGNUMBER	29016RMFS	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: Т+: Облигации	Класс
+CLASS_CODE	TQOB	Код класса
+TRADE_DATE_CODE	04/08/2025	Дата торгов
+SEC_FACE_VALUE	1000.00	Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	4	Точность
+SEC_PRICE_STEP	0.0010	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Облигации	Тип инстр-та
+SECSUBTYPESTATIC	Облигационный федеральный займ	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED		Квалиф. инвестор
+EV_SESS_ALLOWED	Да	Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE	Да	Утр. сессия
+ANONTRADE	Разрешена	Анон. торг.
+MAT_DATE	12/23/2026	Погашение
+DAYS_TO_MAT_DATE	624	До погашения
+EXPDATE		Дата исп.
+OBLPERCENT	Процентная	Тип цены обл.
+SUBORDINATEDINST		Суборд инстр-т
+BONDSREMARKS		Неточ. параметры
+PREVWAPRICE	98.9980	Пред. оц.
+COUNTERPRICE	0.0000	Цена контраг.
+BENCHMARK		Индикатор

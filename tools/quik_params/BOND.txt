@@ -1,0 +1,107 @@
+	BOND
+SECTYPE	корп.обл.	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	70.0711	Спрос
+BIDDEPTH	1	Кол. спрос
+BIDDEPTHT	328	Общ. спрос
+NUMBIDS	33	Заявки куп.
+OFFER	70.9882	Предл.
+OFFERDEPTH	4	Кол. предл.
+OFFERDEPTHT	588	Общ. предл.
+NUMOFFERS	28	Заявки прод.
+OPEN	71.5000	Откр.
+HIGH	71.5000	Макс. цена
+LOW	70.0753	Мин. цена
+LAST	70.0753	Цена послед.
+CHANGE	-1.3365	Измен. к закр.
+QTY	4	Кол-во послед.
+TIME	18:22:06	Время послед.
+VOLTODAY	46	Общее кол-во
+VALTODAY	2805706	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	241589.08	Оборот посл.
+WAPRICE	70.7672	Ср. взв. цена
+HIGHBID	71.5000	Лучш. спрос
+LOWOFFER	70.0000	Лучш. пред
+NUMTRADES	20	Кол-во сделок
+PREVPRICE	71.4118	Цена закр.
+ACCRUEDINT	273.219447	НКД
+YIELD	32.18	Доходность
+COUPONVALUE	15.00	Размер купона
+COUPONPERIOD	92	Длит. купона
+YIELDATPREVWAPRI	30.30	Доход.пред.оц.
+YIELDATWAPRICE	31.38	Доход.оц.
+PRICEMINUSPREVWA	-1.6053	Изм. к пред.оц.
+CLOSEPRICE	0.0000	Закр.
+LASTCHANGE	-1.87	% измен.закр.
+MARKETPRICE	71.5719	Вч.рын.цена
+MARKETPRICETODAY	0.0000	Рын.цена
+NEXTCOUPON	06/20/2025	Дата выпл. куп.
+BUYBACKPRICE	100.0000	Оферта
+BUYBACKDATE	12/20/2026	Дата расч.доход
+ISSUESIZE	288650	Объем обр.
+PREVDATE	04/07/2025	Дата посл.торг.
+DURATION	586.00	Дюрация
+LCURRENTPRICE	70.0753	Оф.тек.цена
+LCLOSEPRICE	0.0000	Оф.цена закр.
+QUOTEBASIS	% от ном.	Тип цены
+LASTBID	70.0711	Спрос сессии
+LASTOFFER	70.9882	Предл.сессии
+MARKETPRICE2	0.0000	Рын.цена2
+PREVLEGALCLOSEPR	72.2990	Пред.цена закр.
+OPENPERIODPRICE	0.0000	Цена предторг.
+MIN_CURR_LAST	70.0753	Мин.тек.цена
+SETTLECODE	Y1	Код расч.
+ISSUESIZEPLACED	288650	Объем в обр.
+SETTLEDATE	04/09/2025	Дата расч.
+CURRENCYID	SUR	Сопр.валюта
+LISTLEVEL	3	Листинг
+PRICEMAX	100.1325	Макс.возм.цена
+PRICEMIN	42.9140	Мин.возм.цена
+FULLCOVEREDFLAG	Нет	Запр.необ.торгов
+COMPLEXPRODUCT	0	Сложный продукт
+LONGNAME	ТБанк TCS-perp2	Инструмент
+SHORTNAME	TCS perp2	Инструмент сокр.
+CODE	RU000A107746	Код инструмента
+ISINCODE	RU000A107746	ISIN
+REGNUMBER	4-04-02673-B	Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ ФР: Т+: Корпоративные облигации	Класс
+CLASS_CODE	TQCB	Код класса
+TRADE_DATE_CODE	04/08/2025	Дата торгов
+SEC_FACE_VALUE	1000.00	Номинал
+SEC_FACE_UNIT	USD	Валюта
+SEC_SCALE	4	Точность
+SEC_PRICE_STEP	0.0001	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Облигации	Тип инстр-та
+SECSUBTYPESTATIC	Корпоративная облигация	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+PRIMARYDIST	Нет	Размещение IPO
+QUALIFIED	Для любых квал.инвесторов	Квалиф. инвестор
+EV_SESS_ALLOWED	Да	Доп.сессия
+HIGH_RISK		П.И.Р.
+REPOBASIS		Базис РЕПО
+MORN_SESS_ALLOWE		Утр. сессия
+ANONTRADE	Разрешена	Анон. торг.
+MAT_DATE		Погашение
+DAYS_TO_MAT_DATE		До погашения
+EXPDATE		Дата исп.
+OBLPERCENT	Процентная	Тип цены обл.
+SUBORDINATEDINST	Да	Суборд инстр-т
+BONDSREMARKS		Неточ. параметры
+PREVWAPRICE	71.6806	Пред. оц.
+COUNTERPRICE	0.0000	Цена контраг.
+BENCHMARK		Индикатор

@@ -1,0 +1,106 @@
+	OPT
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	2.71	Спрос
+BIDDEPTH	3	Кол. спрос
+BIDDEPTHT	3	Общ. спрос
+NUMBIDS	1	Заявки куп.
+OFFER	3.46	Предл.
+OFFERDEPTH	3	Кол. предл.
+OFFERDEPTHT	6	Общ. предл.
+NUMOFFERS	2	Заявки прод.
+HIGH	0.00	Макс. цена
+LOW	0.00	Мин. цена
+LAST	3.30	Цена послед.
+CHANGE	0.08	Измен. к закр.
+QTY	1	Кол-во послед.
+TIME	19:42:39	Время послед.
+VOLTODAY	1	Общее кол-во
+VALTODAY	57746.70	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	2844.24	Оборот посл.
+WAPRICE	3.30	Ср. взв. цена
+NUMTRADES	1	Кол-во сделок
+PREVPRICE	3.00	Цена закр.
+LASTCHANGE	2.48	% измен.закр.
+SETTLECODE		Код расч.
+SETTLEDATE		Дата расч.
+PRICEMAX	5.12	Макс.возм.цена
+PRICEMIN	1.37	Мин.возм.цена
+LONGNAME	BR-5.25M100425PA67	Инструмент
+SHORTNAME	BR00067BP5B	Инструмент сокр.
+CODE	BR67BP5B	Код инструмента
+ISINCODE		ISIN
+REGNUMBER		Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	FORTS: Опционы	Класс
+CLASS_CODE	SPBOPT	Код класса
+TRADE_DATE_CODE	04/08/2025	Дата торгов
+SEC_FACE_VALUE		Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	2	Точность
+SEC_PRICE_STEP	0.01	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Опционы	Тип инстр-та
+SECSUBTYPESTATIC	Опцион на фьючерс	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+ANONTRADE	Разрешена	Анон. торг.
+MAT_DATE	04/10/2025	Погашение
+DAYS_TO_MAT_DATE	2	До погашения
+EXPDATE	04/10/2025	Дата исп.
+PREVWAPRICE	3.00	Пред. оц.
+BENCHMARK		Индикатор
+CHANGETIME	19:16:43	Время изм.
+TRADINGPHASE	открыта	Бирж. сессия
+STARTTIME	10:00:00	Начало.аук.
+ENDTIME	18:50:00	Окончание.аук.
+TRADECHANGE	0.00	Тренд
+CLPRICE	3.00	Кот. клиринга
+OPTIONBASE	BRK5	Баз.актив
+PREVSETTLEPRICE	3.00	Пред.расч.цена
+BUYDEPO	3072.88	ГО покупателя
+STEPPRICE	8.546410	Ст. шага цены
+CLSTATE	Назначен пр.	Статус кл.
+EVNSTARTTIME	19:05:00	Начало веч.
+EVNENDTIME	23:50:00	Окончание веч.
+FIRSTOPEN	0.00	Перв.цена сессии
+LASTCLOSE	3.30	Посл.цена сессии
+PREVSETTLEVOL	2563.92	Пред.расч.объем
+OPENPCTCHANGE	0.00	% измен.откр.
+NEGATIVEPRC	Нет	Огран.отриц.цен
+NUMCONTRACTS	198	Откр.инт.
+OPTIONBASECLASS	SPBFUT	Класс баз.актива
+CURSTEPPRICE	USD	Валюта шага цены
+BUYDEPO_HRC	3072.88	ГО покупат. КПУР
+BUYDEPO_MRC	2948.52	ГО покупат. КСУР
+BUYDEPO_LRC	2989.71	ГО покупат. КНУР
+BUYDEPO_ERC	3072.88	ГО покупат. КОУР
+BGOP	6298.20	БГОП
+BGONP	8120.57	БГОНП
+STRIKE	67.00	Страйк
+OPTIONTYPE	Put	Тип опциона
+VOLATILITY	73.813	Волатильность
+THEORPRICE	3.01	Теор. цена
+MARG	Маржируемый	Тип расч. опц.
+TOTALPREMIUMVOL	2844.24	Сумм. об. премии
+OPTIONKIND	Американский	Вид опциона
+OPTIONEXECTYPE	Поставочный	Тип исп. опц.
+BGOP_HRC	6298.20	БГОП КПУР
+BGOP_MRC	12090.67	БГОП КСУР
+BGOP_LRC	16830.80	БГОП КНУР
+BGOP_ERC	6298.20	БГОП КОУР
+BGONP_HRC	8120.57	БГОНП КПУР
+BGONP_MRC	14295.35	БГОНП КСУР
+BGONP_LRC	19009.85	БГОНП КНУР
+BGONP_ERC	8120.57	БГОНП КОУР

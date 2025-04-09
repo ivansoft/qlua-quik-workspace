@@ -1,0 +1,68 @@
+	CLT_FUT
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+TRADINGSTATUS	открыта	Сессия
+WAPRICE	0.0	Ср. взв. цена
+PREVPRICE	6387.0	Цена закр.
+SETTLECODE		Код расч.
+SETTLEDATE		Дата расч.
+PRICEMAX	7025.5	Макс.возм.цена
+PRICEMIN	5748.5	Мин.возм.цена
+LONGNAME	LKOH_CLT	Инструмент
+SHORTNAME	LKOH_CLT	Инструмент сокр.
+CODE	LKOH_CLT	Код инструмента
+ISINCODE		ISIN
+REGNUMBER		Рег.номер
+CFI_CODE		CFI
+STOCKCODE	LKOH	StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ Деривативы: Коллатеральные фьючерсы	Класс
+CLASS_CODE	FUTCLT	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE		Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	1	Точность
+SEC_PRICE_STEP	0.5	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Фьючерсы	Тип инстр-та
+SECSUBTYPESTATIC	Коллатеральный фьючерс	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+ANONTRADE	Запрещена	Анон. торг.
+MAT_DATE	01/01/2100	Погашение
+DAYS_TO_MAT_DATE	27295	До погашения
+EXPDATE	01/01/2100	Дата исп.
+BENCHMARK		Индикатор
+CHANGETIME	09:38:36	Время изм.
+TRADINGPHASE	закрыта	Бирж. сессия
+CLPRICE	6387.0	Кот. клиринга
+OPTIONBASE	LKOH	Баз.актив
+PREVSETTLEPRICE	6387.0	Пред.расч.цена
+SELLDEPO	1277.42	ГО продавца
+BUYDEPO	1277.42	ГО покупателя
+STEPPRICE	0.500000	Ст. шага цены
+SETTLEPRICE	6279.5	Расч. цена
+R_SETTLEPRICE	6279.50000	Реал. расч. цена
+CLSTATE	Назначен пр.	Статус кл.
+R_CLPRICE	6387.00000	Реал.кот.клиринг
+STEP_IN_CURRENCY	0.500000	Ст.шага в валюте
+ISPERCENT	Обычная	Тип цены фьюч.
+FUTURETYPE		Тип фьючерса
+OPTIONBASECLASS		Класс баз.актива
+CURSTEPPRICE	SUR	Валюта шага цены
+BUYDEPO_HRC	1277.42	ГО покупат. КПУР
+BUYDEPO_MRC	2299.33	ГО покупат. КСУР
+BUYDEPO_LRC	2967.61	ГО покупат. КНУР
+BUYDEPO_ERC	1277.42	ГО покупат. КОУР
+SELLDEPO_HRC	1277.42	ГО продавца КПУР
+SELLDEPO_MRC	2299.33	ГО продавца КСУР
+SELLDEPO_LRC	2967.61	ГО продавца КНУР
+SELLDEPO_ERC	1277.42	ГО продавца КОУР

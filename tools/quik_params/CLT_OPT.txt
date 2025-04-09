@@ -1,0 +1,109 @@
+	CLT_OPT
+STATUS	торгуется	Статус
+LOTSIZE	1	Лот
+BID	0.90	Спрос
+BIDDEPTH	18000	Кол. спрос
+BIDDEPTHT	27138	Общ. спрос
+NUMBIDS	5	Заявки куп.
+OFFER	3.98	Предл.
+OFFERDEPTH	1920	Кол. предл.
+OFFERDEPTHT	2770	Общ. предл.
+NUMOFFERS	3	Заявки прод.
+HIGH	4.00	Макс. цена
+LOW	2.65	Мин. цена
+LAST	2.65	Цена послед.
+CHANGE	-0.76	Измен. к закр.
+QTY	5999	Кол-во послед.
+TIME	22:16:59	Время послед.
+VOLTODAY	7465	Общее кол-во
+VALTODAY	2239500.00	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	15897.35	Оборот посл.
+WAPRICE	2.83	Ср. взв. цена
+NUMTRADES	25	Кол-во сделок
+PREVPRICE	3.41	Цена закр.
+LASTCHANGE	-22.29	% измен.закр.
+SETTLECODE		Код расч.
+SETTLEDATE		Дата расч.
+PRICEMAX	4.04	Макс.возм.цена
+PRICEMIN	0.79	Мин.возм.цена
+LONGNAME	SBERP160425CE300	Инструмент
+SHORTNAME	SR000300CD5	Инструмент сокр.
+CODE	SR300CD5	Код инструмента
+ISINCODE		ISIN
+REGNUMBER		Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ Деривативы: Опционы на акции	Класс
+CLASS_CODE	OPTSPOT	Код класса
+TRADE_DATE_CODE	04/09/2025	Дата торгов
+SEC_FACE_VALUE		Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	2	Точность
+SEC_PRICE_STEP	0.01	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Опционы	Тип инстр-та
+SECSUBTYPESTATIC	Опцион на акцию	Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+ANONTRADE	Разрешена	Анон. торг.
+MAT_DATE	04/16/2025	Погашение
+DAYS_TO_MAT_DATE	7	До погашения
+EXPDATE	04/16/2025	Дата исп.
+BENCHMARK		Индикатор
+CHANGETIME	09:27:26	Время изм.
+TRADINGPHASE	открыта	Бирж. сессия
+STARTTIME	10:00:00	Начало.аук.
+ENDTIME	18:50:00	Окончание.аук.
+TRADECHANGE	-0.35	Тренд
+CLPRICE	3.41	Кот. клиринга
+OPTIONBASE	SBER_CLT	Баз.актив
+PREVSETTLEPRICE	3.41	Пред.расч.цена
+BUYDEPO	3.41	ГО покупателя
+STEPPRICE	0.010000	Ст. шага цены
+CLSTATE	Назначен пр.	Статус кл.
+R_CLPRICE	3.41000	Реал.кот.клиринг
+EVNSTARTTIME	19:05:00	Начало веч.
+EVNENDTIME	23:50:00	Окончание веч.
+STEP_IN_CURRENCY	0.010000	Ст.шага в валюте
+FIRSTOPEN	4.00	Перв.цена сессии
+LASTCLOSE	0.00	Посл.цена сессии
+OPENPCTCHANGE	-33.75	% измен.откр.
+NUMCONTRACTS	427494	Откр.инт.
+OPTIONBASECLASS	FUTCLT	Класс баз.актива
+CURSTEPPRICE	SUR	Валюта шага цены
+BUYDEPO_HRC	3.41	ГО покупат. КПУР
+BUYDEPO_MRC	3.41	ГО покупат. КСУР
+BUYDEPO_LRC	3.41	ГО покупат. КНУР
+BUYDEPO_ERC	3.41	ГО покупат. КОУР
+BGOP	46.68	БГОП
+BGONP	39.26	БГОНП
+STRIKE	300.00	Страйк
+OPTIONTYPE	Call	Тип опциона
+VOLATILITY	41.597	Волатильность
+THEORPRICE	1.98	Теор. цена
+MARG	С уплатой премии	Тип расч. опц.
+TOTALPREMIUMVOL	21124.01	Сумм. об. премии
+OPTIONKIND	Европейский	Вид опциона
+OPTIONEXECTYPE	Расчетный	Тип исп. опц.
+BGOP_HRC	46.68	БГОП КПУР
+BGOP_MRC	86.86	БГОП КСУР
+BGOP_LRC	114.53	БГОП КНУР
+BGOP_ERC	46.68	БГОП КОУР
+BGONP_HRC	39.26	БГОНП КПУР
+BGONP_MRC	79.06	БГОНП КСУР
+BGONP_LRC	106.72	БГОНП КНУР
+BGONP_ERC	39.26	БГОНП КОУР
+LOTCOEFF	1	Коэф.объема БА
+FIXSPOTDISCOUNT	0.000000	Сум.об.ден.поток
+PROJSPOTDISCOUNT	0.000000	Сум.пр.ден.поток
+RISKINTERESTRATE	0.214230	Безрск.пр.ставка

@@ -1,0 +1,86 @@
+	ETC
+SECTYPE	вал	Тип
+STATUS	торгуется	Статус
+LOTSIZE	1000	Лот
+BID	11.62200	Спрос
+BIDDEPTH	675	Кол. спрос
+BIDDEPTHT	95212	Общ. спрос
+NUMBIDS	997	Заявки куп.
+OFFER	11.62250	Предл.
+OFFERDEPTH	432	Кол. предл.
+OFFERDEPTHT	87810	Общ. предл.
+NUMOFFERS	541	Заявки прод.
+OPEN	11.59000	Откр.
+HIGH	11.67550	Макс. цена
+LOW	11.50600	Мин. цена
+LAST	11.62250	Цена послед.
+CHANGE	0.04150	Измен. к закр.
+QTY	50	Кол-во послед.
+TIME	18:28:24	Время послед.
+VOLTODAY	7487015000	Общее кол-во
+VALTODAY	86693099948	Оборот
+TRADINGSTATUS	открыта	Сессия
+VALUE	581125.00	Оборот посл.
+WAPRICE	11.57910	Ср. взв. цена
+HIGHBID	11.80000	Лучш. спрос
+LOWOFFER	11.13700	Лучш. пред
+NUMTRADES	76366	Кол-во сделок
+PREVPRICE	11.58100	Цена закр.
+PRICEMINUSPREVWA	-0.08310	Изм. к пред.оц.
+CLOSEPRICE	11.56210	Закр.
+LASTCHANGE	0.36	% измен.закр.
+SETTLECODE	T1	Код расч.
+SETTLEDATE	04/09/2025	Дата расч.
+PRICEMAX	12.13750	Макс.возм.цена
+PRICEMIN	11.09400	Мин.возм.цена
+LONGNAME	CNY/RUB_TOM - CNY/РУБ	Инструмент
+SHORTNAME	CNYRUB_TOM	Инструмент сокр.
+CODE	CNYRUB_TOM	Код инструмента
+ISINCODE		ISIN
+REGNUMBER		Рег.номер
+CFI_CODE		CFI
+STOCKCODE		StockCode
+SEDOL		SEDOL
+RIC		RIC
+CUSIP		CUSIP
+STOCKNAME		StockName
+BSID		Bloomberg ID
+QTY_SCALE	0	Точн. кол-ва
+LOT	1	Кратность лота
+CLASSNAME	МБ Валюта: ЕТС	Класс
+CLASS_CODE	CETS	Код класса
+TRADE_DATE_CODE	04/08/2025	Дата торгов
+SEC_FACE_VALUE	1.00	Номинал
+SEC_FACE_UNIT	SUR	Валюта
+SEC_SCALE	5	Точность
+SEC_PRICE_STEP	0.00050	Шаг цены
+SEC_COMMENT		Комментарий
+AGENT_ID		Агент по размещ.
+AUCTION_ID		ID аукциона
+ISSUER		Эмитент
+SECTYPESTATIC	Валюта	Тип инстр-та
+SECSUBTYPESTATIC		Подтип инстр-та
+MAX_ACT_QTYSCALE	0	Макс.акт.точ.кол
+ANONTRADE	Разрешена	Анон. торг.
+PREVWAPRICE	11.70560	Пред. оц.
+BENCHMARK		Индикатор
+BASEPRICE	0.00000	Баз.курс
+SETTLEDATE1		Дата расч.1
+TRADINGPHASE	Открыта	Бирж. сессия
+DPVALINDICATORBU	Нет	Заявок пок.
+DPVALINDICATORSE	Нет	Заявок пр.
+LOPENPRICE	11.56210	Оцен.10:00-11:30
+PLANNEDTIME	09:50:00	Начало аук.план
+STARTTIME	09:50:00	Начало.аук.
+ENDTIME	09:59:52	Окончание.аук.
+AUCTPRICE	11.59000	Цена аукц.
+AUCTVALUE	9735600.00	Объем аукц.
+AUCTVOLUME	840000	Кол-во аукц.
+AUCTNUMTRADES	19	Кол-во сд.аукц.
+MARKETVOLB	0	Рын.пок.
+MARKETVOLS	0	Рын.прод.
+IMBALANCE	0	Дисбаланс
+DPORDERINDICATOR	Нет	Нал. спр./пред.
+FIRST_CUR	CNY	Базовая валюта
+SECOND_CUR	RUB	Котир.валюта
+DERIVATIVE	Нет	ПФИ
